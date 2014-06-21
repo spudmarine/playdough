@@ -12,13 +12,10 @@
 //
 //= require modernizr
 //= require jquery
-//= require jquery.turbolinks
 //= require jquery.ui.all
 //= require jquery_ujs
-//= require turbolinks
 //= require fastclick
 //= require foundation.min
-//= require foundation.equalizer
 //= require foundation.offcanvas
 //= require jquery.cookie
 //= require placeholder
