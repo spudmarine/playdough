@@ -1,0 +1,8 @@
+<h1>FAQs</h1> 
+
+<% @faqs.each do |faq| %>
+	<div>
+		<h2><%= faq.faq %></h2>
+		<%= simple_format faq.answer %>
+	</div>
+<% end %>
