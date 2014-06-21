@@ -19,6 +19,7 @@ class Admin::FaqsController < ApplicationController
 
   # GET /faqs/1/edit
   def edit
+    @faq = Faq.find(params[:id])
   end
 
   # POST /faqs
@@ -40,6 +41,7 @@ class Admin::FaqsController < ApplicationController
   # PATCH/PUT /faqs/1
   # PATCH/PUT /faqs/1.json
   def update
+    @faq = Faq.find(params[:id])
     respond_to do |format|
       if @faq.update(faq_params)
         format.html { redirect_to admin_faqs_url, notice: 'Faq was faqfully updated.' }
