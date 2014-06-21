@@ -2,7 +2,9 @@
 
 <% @faqs.each do |faq| %>
 	<div>
-		<h2><%= faq.faq %></h2>
+		<h2><%= link_to faq.faq, edit_admin_faq_path(faq) %></h2>
 		<%= simple_format faq.answer %>
 	</div>
 <% end %>
+
+<%= link_to 'New FAQ', new_admin_faq_path %>
